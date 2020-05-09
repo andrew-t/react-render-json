@@ -21,6 +21,7 @@
     "webpack": "^4.43.0"
   },
   "dependencies": {
-    "react": "^16.13.1"
+    "react": "^16.13.1",
+    "react-render-json": "^1.0.0"
   }
 }

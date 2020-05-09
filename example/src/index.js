@@ -1,9 +1,9 @@
 import React from 'react';
 
-// This will just be 
-//   import ReactJSON from 'react-render-json';
-// in production:
-import ReactJSON from '../../package';
+import ReactJSON from 'react-render-json';
+
+// Or, to test against your local version:
+// import ReactJSON from '../../package';
 
 class Person extends React.Component {
 	render() {
