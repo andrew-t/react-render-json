@@ -95,9 +95,7 @@ const payload = (
 	<ReactJSON.Object
 		id="object-id"
 		entries={
-			<ReactJSON.Array>
-				<Counter start={ 1 } stop={ 3 } />
-			</ReactJSON.Array>
+			<Counter start={ 1 } stop={ 3 } />
 		}
 	/>
 );
