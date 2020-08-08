@@ -18,15 +18,24 @@ function Animal() {
 	return <ReactJSON.Literal value={ this.props.type } />;
 }
 
+function Counter() {
+	const { start, stop } = this.props,
+		children = [];
+	for (let i = start; i <= stop; i++) {
+		children.push(
+			<ReactJSON.Literal value={ i } key={ i } />
+		);
+	}
+	return <ReactJSON.Array>
+		{ children }
+	</ReactJSON.Array>;
+}
+
 const payload = (
 	<ReactJSON.Object
 		id="object-id"
 		entries={
-			<ReactJSON.Array>
-				<ReactJSON.Literal value={ 1 } />
-				<Person name="Andrew" />
-				<Animal type="dog" />
-			</ReactJSON.Array>
+			<Counter start={ 1 } stop={ 3 } />
 		}
 	/>
 );

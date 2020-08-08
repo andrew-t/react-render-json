@@ -1,6 +1,6 @@
 {
   "name": "react-render-json",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Render your API's JSON payloads using React!",
   "main": "index.js",
   "files": [ "index.js", "README.md" ],

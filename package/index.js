@@ -1,18 +1,18 @@
-function Array(...args) {
+function Array() {
 	if (!this.props.children) return [];
 	if (!this.props.children.map)
 		return renderObject(this.props.children);
 	return this.props.children.map(renderObject);
 }
 
-function Object(...args) {
+function Object() {
 	const output = {};
 	for (let k in this.props)
 		output[k] = renderObject(this.props[k]);
 	return output;
 }
 
-function Literal(...args) {
+function Literal() {
 	return this.props.value;
 }
 
